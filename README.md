@@ -26,8 +26,12 @@ loop-engineering/
 
 ## 🎯 Project 01: WatchLoop
 
-**Status**: ✅ Complete  
+**Status**: ✅ Complete & Deployed  
 **Tech Stack**: Python (Flask) + React + Vite + Tailwind CSS
+
+### 🌐 Live Demo
+- **Frontend**: https://frontend-fawn-six-17.vercel.app
+- **Backend API**: https://loop-engineering-production-36ef.up.railway.app
 
 ### Overview
 An in-session agent loop monitoring system that autonomously watches long-running tasks, checks status every 60 seconds, detects completion, and reports exactly once - similar in concept to Claude's `/loop` command.
@@ -40,7 +44,7 @@ An in-session agent loop monitoring system that autonomously watches long-runnin
 - Clean lifecycle management (start/stop/reset)
 - Comprehensive testing (13/13 acceptance criteria passed)
 
-### Quick Start
+### Quick Start (Local Development)
 ```bash
 cd 01-watchloop
 
@@ -51,9 +55,9 @@ python backend/run_production.py
 cd frontend && npm run dev
 ```
 
-**Dashboard**: http://localhost:5173
+**Local Dashboard**: http://localhost:5173
 
-[📖 Full Documentation →](./01-watchloop/README.md)
+[📖 Full Documentation →](./01-watchloop/README.md) | [🚀 Deployment Guide →](./DEPLOYMENT_SUCCESS.md)
 
 ---
 
