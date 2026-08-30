@@ -4,13 +4,26 @@ Flask API Server - Provides endpoints for the WatchLoop frontend
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from datetime import datetime
+import os
 
 from state_manager import load_state, reset_state, add_event
 from task_runner import task_runner
 from watcher import watch_loop
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend communication
+
+# Configure CORS for both development and production
+cors_origins = [
+    "http://localhost:5173",  # Local Vite dev server
+    "http://localhost:4173",  # Local Vite preview
+]
+
+# Add production origins from environment variable if provided
+if os.environ.get('FRONTEND_URL'):
+    cors_origins.append(os.environ.get('FRONTEND_URL'))
+
+# Allow Vercel preview and production deployments
+CORS(app, origins=cors_origins + ["https://*.vercel.app"])
 
 
 @app.route('/api/status', methods=['GET'])
