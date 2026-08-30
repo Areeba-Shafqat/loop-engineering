@@ -4,8 +4,6 @@ A collection of 12 advanced engineering projects demonstrating various loop patt
 
 ## 📁 Repository Structure
 
-This repository is organized with one folder per project:
-
 ```
 loop-engineering/
 ├── 01-watchloop/          ✅ COMPLETE - In-Session Agent Loop Monitor
@@ -24,7 +22,7 @@ loop-engineering/
 
 ---
 
-## 🎯 Project 01: WatchLoop
+## 🎯 Project 01: WatchLoop ✅
 
 **Status**: ✅ Complete & Deployed  
 **Tech Stack**: Python (Flask) + React + Vite + Tailwind CSS
@@ -44,26 +42,28 @@ An in-session agent loop monitoring system that autonomously watches long-runnin
 - Clean lifecycle management (start/stop/reset)
 - Comprehensive testing (13/13 acceptance criteria passed)
 
-### Quick Start (Local Development)
-```bash
-cd 01-watchloop
-
-# Terminal 1: Backend
-python backend/run_production.py
-
-# Terminal 2: Frontend
-cd frontend && npm run dev
-```
-
-**Local Dashboard**: http://localhost:5173
-
-[📖 Full Documentation →](./01-watchloop/README.md) | [🚀 Deployment Guide →](./DEPLOYMENT_SUCCESS.md)
+[📖 Full Documentation →](./01-watchloop/README.md)
 
 ---
 
 ## 🚀 Coming Soon
 
 Projects 02-12 will be added progressively, each demonstrating different engineering concepts and patterns.
+
+**Potential Project Ideas:**
+- ScheduleLoop - Cron-like task scheduler
+- RetryLoop - Automatic retry mechanism
+- PollLoop - API polling system
+- WorkerLoop - Background job queue
+- CircuitBreaker - Circuit breaker pattern
+- EventLoop - Event-driven architecture
+- RateLimiter - Rate limiting service
+- HealthCheckLoop - Service monitoring
+- DataSyncLoop - Data synchronization
+- BatchProcessor - Batch job processing
+- MetricsCollector - System metrics collection
+
+[📋 View Project Planning →](./PROJECT_PLANNING.md)
 
 ---
 
@@ -85,6 +85,7 @@ This repository showcases advanced software engineering skills including:
 - Modern UI/UX development
 - Comprehensive testing strategies
 - Professional documentation
+- Production deployment (Vercel + Railway)
 
 ---
 
