@@ -16,14 +16,16 @@ app = Flask(__name__)
 cors_origins = [
     "http://localhost:5173",  # Local Vite dev server
     "http://localhost:4173",  # Local Vite preview
+    "https://frontend-fawn-six-17.vercel.app",  # Production frontend
 ]
 
 # Add production origins from environment variable if provided
 if os.environ.get('FRONTEND_URL'):
     cors_origins.append(os.environ.get('FRONTEND_URL'))
 
-# Allow Vercel preview and production deployments
-CORS(app, origins=cors_origins + ["https://*.vercel.app"])
+# Use regex pattern to allow all Vercel deployments
+CORS(app, origins=cors_origins, supports_credentials=False,
+     origin_regex=r"https://.*\.vercel\.app")
 
 
 @app.route('/api/status', methods=['GET'])
