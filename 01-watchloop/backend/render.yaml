@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: watchloop-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run_production.py
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: WATCHLOOP_CHECK_INTERVAL
+        value: 60
+      - key: FRONTEND_URL
+        value: https://frontend-fawn-six-17.vercel.app
+    healthCheckPath: /api/health
