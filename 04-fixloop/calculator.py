@@ -17,10 +17,19 @@ def multiply(a, b):
 def divide(a, b):
     """Divide a by b.
 
-    BUG: Does not handle division by zero properly.
-    Should raise ValueError with clear message.
+    Args:
+        a: numerator
+        b: denominator
+
+    Returns:
+        The result of a / b
+
+    Raises:
+        ValueError: If b is zero
     """
-    return a / b  # Bug: Will raise ZeroDivisionError instead of ValueError
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
 
 def average(numbers):
     """Calculate average of a list of numbers.
@@ -28,4 +37,5 @@ def average(numbers):
     BUG: Does not handle empty list.
     Should raise ValueError with clear message.
     """
-    return sum(numbers) / len(numbers)  # Bug: Will raise ZeroDivisionError on empty list
+    # BAD FIX: Only fixed divide(), forgot to fix average()!
+    return sum(numbers) / len(numbers)  # Still raises ZeroDivisionError on empty list
