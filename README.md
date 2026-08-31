@@ -8,8 +8,8 @@ A collection of 12 advanced engineering projects demonstrating various loop patt
 loop-engineering/
 ├── 01-watchloop/          ✅ COMPLETE - In-Session Agent Loop Monitor
 ├── 02-testloop/           ✅ COMPLETE - Conditional Loop with Maker-Checker
-├── 03-project-name/       📝 Coming soon
-├── 04-project-name/       📝 Coming soon
+├── 03-morningbrief/       ✅ COMPLETE - Scheduled Loop with Persistent Memory
+├── 04-fixloop/            ✅ COMPLETE - Maker-Checker Bug Fix Workflow
 ├── 05-project-name/       📝 Coming soon
 ├── 06-project-name/       📝 Coming soon
 ├── 07-project-name/       📝 Coming soon
@@ -69,6 +69,36 @@ A demonstration of Concept 5 (Conditional Loop - run-until-done) and Concept 11 
 
 ---
 
+## 🎯 Project 03: Morning Brief ✅
+
+**Status**: ✅ Complete  
+**Tech Stack**: Python + Markdown (Spine)
+
+### Overview
+A scheduled "Morning Brief" that demonstrates unattended scheduled loops and persistent memory. Automatically scans the repository for TODO comments, remembers what it has seen before, and reports only new discoveries.
+
+### Key Features
+- Scheduled job that runs unattended
+- Persistent memory (spine) in `progress.md`
+- Compares current state with historical knowledge
+- Identifies new vs already-known TODOs
+- Preserves complete history across runs
+- Never repeats old information as new
+
+### Core Concepts
+- **Concept 6**: Unattended scheduled loop (automation without human trigger)
+- **Concept 12**: The spine/persistent memory (state survives between runs)
+
+### Demonstration Results
+- ✅ Run 1: Found initial TODOs, recorded in spine
+- ✅ Run 2: No new TODOs, correctly reported "0 new, 4 already known"
+- ✅ Run 3: Added new TODO, detected as new while recognizing previous 4 as known
+- ✅ Spine successfully maintains state across all runs
+
+[📖 Full Documentation →](./03-morningbrief/README.md)
+
+---
+
 ## 🎯 Project 04: FixLoop ✅
 
 **Status**: ✅ Complete  
@@ -101,21 +131,6 @@ A maker-checker bug fix workflow demonstrating branch isolation, reusable skills
 ## 🚀 Coming Soon
 
 Projects 05-12 will be added progressively, each demonstrating different engineering concepts and patterns.
-
-**Potential Project Ideas:**
-- ScheduleLoop - Cron-like task scheduler
-- RetryLoop - Automatic retry mechanism
-- PollLoop - API polling system
-- WorkerLoop - Background job queue
-- CircuitBreaker - Circuit breaker pattern
-- EventLoop - Event-driven architecture
-- RateLimiter - Rate limiting service
-- HealthCheckLoop - Service monitoring
-- DataSyncLoop - Data synchronization
-- BatchProcessor - Batch job processing
-- MetricsCollector - System metrics collection
-
-[📋 View Project Planning →](./PROJECT_PLANNING.md)
 
 ---
 
@@ -154,4 +169,4 @@ GitHub: [@Areeba-Shafqat](https://github.com/Areeba-Shafqat)
 
 ---
 
-**Last Updated**: 2026-08-30
+**Last Updated**: 2026-08-31
