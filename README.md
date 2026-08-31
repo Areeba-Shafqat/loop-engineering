@@ -92,9 +92,9 @@ Projects 02-12 will be added progressively, each demonstrating different enginee
 
 ## 📊 Progress
 
-- **Completed**: 2/12 projects
+- **Completed**: 3/12 projects
 - **In Progress**: 0/12 projects
-- **Planned**: 10/12 projects
+- **Planned**: 9/12 projects
 
 ---
 
