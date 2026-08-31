@@ -69,9 +69,38 @@ A demonstration of Concept 5 (Conditional Loop - run-until-done) and Concept 11 
 
 ---
 
+## 🎯 Project 04: FixLoop ✅
+
+**Status**: ✅ Complete  
+**Tech Stack**: Python + pytest + Git branches
+
+### Overview
+A maker-checker bug fix workflow demonstrating branch isolation, reusable skills, and independent review. An implementer fixes bugs in isolation, and a separate reviewer must approve before a PR can be opened.
+
+### Key Features
+- Isolated branch-based bug fixing workflow
+- Reusable fix-bug skill procedure
+- Independent code review with PASS/FAIL verdicts
+- PR gate enforcement (only open after PASS)
+- Two-scenario demonstration (good fix + bad fix)
+- Real bugs with regression tests
+
+### Core Concepts
+- **Concept 8**: Branch/worktree isolation for safe development
+- **Concept 9**: Reusable skills for consistent procedures
+- **Concept 11**: Maker-checker separation (no self-approval)
+
+### Demonstration Results
+- ✅ Good fix: Both bugs fixed → Reviewer PASS → PR opened
+- ❌ Bad fix: Incomplete (1 bug unfixed) → Reviewer FAIL → No PR
+
+[📖 Full Documentation →](./04-fixloop/README.md)
+
+---
+
 ## 🚀 Coming Soon
 
-Projects 02-12 will be added progressively, each demonstrating different engineering concepts and patterns.
+Projects 05-12 will be added progressively, each demonstrating different engineering concepts and patterns.
 
 **Potential Project Ideas:**
 - ScheduleLoop - Cron-like task scheduler
@@ -92,9 +121,9 @@ Projects 02-12 will be added progressively, each demonstrating different enginee
 
 ## 📊 Progress
 
-- **Completed**: 3/12 projects
+- **Completed**: 4/12 projects
 - **In Progress**: 0/12 projects
-- **Planned**: 9/12 projects
+- **Planned**: 8/12 projects
 
 ---
 
