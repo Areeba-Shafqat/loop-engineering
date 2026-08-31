@@ -7,7 +7,7 @@ A collection of 12 advanced engineering projects demonstrating various loop patt
 ```
 loop-engineering/
 ├── 01-watchloop/          ✅ COMPLETE - In-Session Agent Loop Monitor
-├── 02-project-name/       📝 Coming soon
+├── 02-testloop/           ✅ COMPLETE - Conditional Loop with Maker-Checker
 ├── 03-project-name/       📝 Coming soon
 ├── 04-project-name/       📝 Coming soon
 ├── 05-project-name/       📝 Coming soon
@@ -46,6 +46,29 @@ An in-session agent loop monitoring system that autonomously watches long-runnin
 
 ---
 
+## 🎯 Project 02: TestLoop ✅
+
+**Status**: ✅ Complete  
+**Tech Stack**: Python + pytest
+
+### Overview
+A demonstration of Concept 5 (Conditional Loop - run-until-done) and Concept 11 (Maker-Checker Separation). Shows how an AI worker iteratively fixes code until an independent test runner verifies completion.
+
+### Key Features
+- Conditional loop that runs until tests pass
+- Maker-checker separation (worker fixes, pytest verifies)
+- Maximum 6 attempts with clear stopping conditions
+- Transparent test output for verification
+- Immutable test suite as acceptance criteria
+
+### Core Concepts
+- **Concept 5**: Loop continues while condition is false, stops when true
+- **Concept 11**: Worker cannot approve own work - independent checker required
+
+[📖 Full Documentation →](./02-testloop/README.md)
+
+---
+
 ## 🚀 Coming Soon
 
 Projects 02-12 will be added progressively, each demonstrating different engineering concepts and patterns.
@@ -69,9 +92,9 @@ Projects 02-12 will be added progressively, each demonstrating different enginee
 
 ## 📊 Progress
 
-- **Completed**: 1/12 projects
+- **Completed**: 2/12 projects
 - **In Progress**: 0/12 projects
-- **Planned**: 11/12 projects
+- **Planned**: 10/12 projects
 
 ---
 
