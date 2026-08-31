@@ -17,3 +17,7 @@ def validate_input():
 # TODO: Add logging for debugging purposes
 def log_activity():
     pass
+
+# TODO: Optimize performance for large datasets
+def handle_large_data():
+    pass
